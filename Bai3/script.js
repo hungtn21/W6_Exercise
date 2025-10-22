@@ -304,8 +304,8 @@ document.head.appendChild(style);
 // ============================================
 // CONSOLE MESSAGE
 // ============================================
-console.log("✅ JavaScript đã được tải thành công!");
-console.log("📦 Các chức năng có sẵn:");
+console.log("JavaScript đã được tải thành công!");
+console.log("Các chức năng có sẵn:");
 console.log("  - Tìm kiếm sản phẩm theo tên");
 console.log("  - Thêm sản phẩm mới");
 console.log("  - Hiển thị/ẩn form thêm sản phẩm");
