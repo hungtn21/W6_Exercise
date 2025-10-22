@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Rau Củ Xanh</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Phần head chứa metadata và tiêu đề trang -->
+</head>
+<body>
+
+  <!-- Header: chứa tên cửa hàng và navigation chính -->
+  <header>
+    <div>
+      <h1>Cửa hàng Rau Củ Xanh</h1>
+      <p>Tươi ngon - An toàn - Giao tận nơi</p>
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main: phần nội dung chính của trang -->
+  <main>
+    <!-- Section: giới thiệu ngắn về cửa hàng -->
+    <section>
+      <h2 id="about">Giới thiệu</h2>
+      <p>Chào mừng đến với Cửa hàng Rau Củ Xanh — cung cấp rau củ sạch, được chọn lọc hằng ngày từ nông trại uy tín. Chúng tôi hướng tới thực phẩm an toàn cho gia đình bạn.</p>
+    </section>
+
+    <!-- Section: danh sách sản phẩm. Mỗi sản phẩm nằm trong một <article> -->
+    <section id="products">
+      <h2 id="products-title">Sản phẩm nổi bật</h2>
+      
+      <!-- Search box và nút thêm sản phẩm -->
+      <div class="product-controls">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+          <button id="searchBtn">Tìm</button>
+        </div>
+        <button id="addProductBtn">Thêm sản phẩm</button>
+      </div>
+
+      <div id="product-list">
+        <article class="product-item">
+          <h3>Cà rốt tươi</h3>
+          <p class="product-description">Cà rốt giòn, ngọt, trồng theo tiêu chuẩn an toàn. Phù hợp cho món xào, luộc hoặc làm salad.</p>
+          <p class="product-price">₫28,000 / kg</p>
+        </article>
+
+        <article class="product-item">
+          <h3>Rau cải xanh</h3>
+          <p class="product-description">Rau cải tươi mỗi ngày, không sử dụng thuốc bảo vệ thực vật. Ngon và bổ dưỡng cho bữa cơm gia đình.</p>
+          <p class="product-price">₫18,000 / bó</p>
+        </article>
+
+        <article class="product-item">
+          <h3>Khoai tây đỏ</h3>
+          <p class="product-description">Khoai tây chất lượng, vỏ mỏng, phù hợp nấu cháo, chiên hoặc nướng. Bảo quản dễ dàng.</p>
+          <p class="product-price">₫22,000 / kg</p>
+        </article>
+      </div>
+
+      <!-- Form thêm sản phẩm (ẩn mặc định) -->
+      <form id="addProductForm" class="hidden">
+        <h3>Thêm sản phẩm mới</h3>
+        
+        <label for="productName">Tên sản phẩm</label>
+        <input id="productName" name="productName" type="text" placeholder="Ví dụ: Cà chua" required>
+
+        <label for="productDescription">Mô tả</label>
+        <textarea id="productDescription" name="productDescription" placeholder="Mô tả chi tiết về sản phẩm" required></textarea>
+
+        <label for="productPrice">Giá (VNĐ)</label>
+        <input id="productPrice" name="productPrice" type="text" placeholder="Ví dụ: 25,000 / kg" required>
+
+        <div class="form-buttons">
+          <button type="submit">Thêm</button>
+          <button type="button" id="cancelBtn">Hủy</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Section: form liên hệ / đăng ký nhận tin -->
+    <section id="contact">
+      <h2 id="contact-title">Liên hệ / Đăng ký nhận tin</h2>
+      <!--
+        form attributes:
+        - action="#": tạm thời không gửi lên server
+        - method="post": phương thức gửi dữ liệu
+      -->
+      <form action="#" method="post">
+        <label for="name">Họ và tên</label>
+        <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email@vd.com" required>
+
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" placeholder="Nội dung" required></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer: thông tin bản quyền / liên hệ -->
+  <footer>
+    <div>
+      <p>2025 - Cửa hàng Rau Củ Xanh — Địa chỉ: 45 Hàng Cháo, Thành phố Hà Nội. Điện thoại: 0123-456-789</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
